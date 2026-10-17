@@ -1,0 +1,9 @@
+node_modules/
+data/
+.firebase/
+*.log
+backend/.env.local
+.env
+backend/.env.*
+!backend/.env.your-firebase-project-id
+.runtimeconfig.json

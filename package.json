@@ -1,0 +1,18 @@
+{
+  "name": "muranga-service-portal",
+  "version": "2.0.0",
+  "description": "Public Service Request System for Murang’a County Government",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/units.js && node test/smoke.js && SMOKE_TARGET=firebase node test/smoke.js",
+    "firebase:install": "npm --prefix backend install",
+    "firebase:deploy": "firebase deploy",
+    "test:firebase": "SMOKE_TARGET=firebase node test/smoke.js",
+    "start:env": "node --env-file=.env server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}
